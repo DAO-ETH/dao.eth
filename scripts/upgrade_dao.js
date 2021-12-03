@@ -6,7 +6,7 @@ async function main () {
   console.log('Upgrading Contract...');
 
   // paste the V1 address into the ""
-  const mydao = await upgrades.upgradeProxy("0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0", Dao);
+  const mydao = await upgrades.upgradeProxy("0xA0F565a99aC2EB0FA1b8B9eb55Ef1a7Ab577d84C", Dao);
   console.log('Contract upgraded');
 }
 

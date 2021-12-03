@@ -6,7 +6,8 @@ async function main () {
   console.log('Deploying Contract...');
   const mydao = await upgrades.deployProxy(Dao,{initializer:"initialize"});
   await mydao.deployed();
-  console.log('Contract deployed to:', mydao.address);
+  console.log('Proxy contract deployed to:', mydao.address);
+  console.log('Search on https://rinkeby.etherscan.io/ for the address of the upgradable contract.');
 }
 
 main()
